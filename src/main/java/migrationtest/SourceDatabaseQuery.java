@@ -26,12 +26,9 @@ import static utils.Utils.*;
 public class SourceDatabaseQuery {
 
 
-
-
 public static void compareFieldCount(String query) {
 
     PipelineOptions options = PipelineOptionsFactory.create();
-
     Pipeline pipeline = Pipeline.create(options);
     pipeline.apply(JdbcIO.<KV<Integer, String>>read()
             .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
@@ -53,7 +50,6 @@ public static void compareFieldCount(String query) {
 
 
         PipelineOptions options = PipelineOptionsFactory.create();
-
         Pipeline pipeline = Pipeline.create(options);
         pipeline.apply(JdbcIO.<KV<String, String>>read()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
@@ -76,9 +72,8 @@ public static void compareFieldCount(String query) {
     public static void sumOfColumns(String query) {
 
         PipelineOptions options = PipelineOptionsFactory.create();
-
         Pipeline pipeline = Pipeline.create(options);
-       pipeline.apply(JdbcIO.<KV<String, Double>>read()
+        pipeline.apply(JdbcIO.<KV<String, Double>>read()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
                 .withQuery(query)
                 .withCoder(KvCoder.of(StringUtf8Coder.of(),DoubleCoder.of()))
@@ -94,10 +89,6 @@ public static void compareFieldCount(String query) {
                     }
                 })
         );
-
-
-
-
         pipeline.run().waitUntilFinish();
     }
 
@@ -105,7 +96,6 @@ public static void compareFieldCount(String query) {
     public static void sumOfColumnsAndGroup(String query) {
 
         PipelineOptions options = PipelineOptionsFactory.create();
-
         Pipeline pipeline = Pipeline.create(options);
         pipeline.apply(JdbcIO.<KV<String, Double>>read()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
@@ -116,7 +106,6 @@ public static void compareFieldCount(String query) {
         )
                 .apply(GroupByKey.<String, Double>create())
                 .apply(ParDo.of(new DoFn<KV<String, Iterable<Double>>, KV<String, Double>>() {
-
                     @ProcessElement
                     public void processElement(ProcessContext c) throws Exception {
                         Iterable<Double> flows = c.element().getValue();
@@ -125,27 +114,20 @@ public static void compareFieldCount(String query) {
                         for (Double value : flows) {
                            sum+=value;
                             numberOfRecords++;
-
                         }
                         System.out.println(KV.of(c.element().getKey(),sum));
                     }
                 }));
-
-
-
         pipeline.run().waitUntilFinish();
     }
 
-    public static void multiColumns(String query) {
-
-
+    public static void multiColumns(String query, String columns) {
         PipelineOptions options = PipelineOptionsFactory.create();
-
         Pipeline pipeline = Pipeline.create(options);
         PCollection<Row> rows = pipeline.apply(JdbcIO.readRows()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
                 .withQuery(query));
-        PCollection<Row> output = rows.apply(Select.fieldNames("field1", "field2"));
+        PCollection<Row> output = rows.apply(Select.fieldNames(columns));
         output.apply(ParDo.of(new DoFn<Row, String>() {
             @ProcessElement
             public void processElement(ProcessContext c) throws Exception {
@@ -170,20 +152,18 @@ public static void compareFieldCount(String query) {
                 }
 
         ));
-
-
         pipeline.run().waitUntilFinish();
 
     }
 
 
-    public static void schemaVerifyMultiColumns(String query) {
+    public static void schemaVerifyMultiColumns(String query, String columns) {
         PipelineOptions options = PipelineOptionsFactory.create();
         Pipeline pipeline = Pipeline.create(options);
         PCollection<Row> rows = pipeline.apply(JdbcIO.readRows()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
                 .withQuery(query));
-        PCollection<Row> output = rows.apply(Select.fieldNames("field1", "field2"));
+        PCollection<Row> output = rows.apply(Select.fieldNames(columns));
         output.apply(ParDo.of(new DoFn<Row, String>() {
             @ProcessElement
             public void processElement(ProcessContext c) throws Exception {
@@ -196,10 +176,9 @@ public static void compareFieldCount(String query) {
 
         }
         ));
-
+        pipeline.run().waitUntilFinish();
 
     }
-
 
 
     }
