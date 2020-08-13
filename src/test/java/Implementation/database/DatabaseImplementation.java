@@ -1,10 +1,9 @@
 package Implementation.database;
 
 import com.thoughtworks.gauge.*;
-import org.junit.Assert;
+import utils.AssertionUtils;
 import utils.ComparisonUtils;
 import utils.Utils;
-import utils.Utils.*;
 
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class DatabaseImplementation {
             }
         }
         else {
-            Assert.assertEquals(Utils.getCount(),Integer.parseInt(rs.get(0)));
+            AssertionUtils.assertCountEquals(String.valueOf(Utils.getCount()),String.valueOf(Integer.parseInt(rs.get(0))));
         }
     }
 

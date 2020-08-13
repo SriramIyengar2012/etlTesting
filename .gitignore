@@ -2,3 +2,6 @@ chromedriver
 target/
 .idea/
 *.iml
+reports/
+.gauge/
+logs/
