@@ -3063,3 +3063,317 @@
 19:46:16.275 Adding specs from /Users/sriramiyengar/Documents/hackathontest/sriram_test_aws/specs/ui-test.spec
 19:46:16.275 Initializing steps cache with 1 steps
 19:46:16.276 Gauge daemon initialized and listening on port: 51165
+15:08:46.176 Watching directory: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs
+15:08:46.221 Found 1 files
+15:08:46.271 Initializing concepts cache with 0 concepts
+15:08:46.289 Initializing specs cache with 1 specs
+15:08:46.289 Adding specs from /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+15:08:46.289 Initializing steps cache with 1 steps
+15:08:46.289 Gauge daemon initialized and listening on port: 49381
+15:15:36.782 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between <Source> and <Target>" > 
+15:15:36.837 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <Source> and <Target>" parameters:"Source" parameters:"Target" > > 
+15:15:36.861 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between \"select count(*) from student;\" and \"select count(*) from student;\"" > 
+15:15:36.862 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+14:32:54.779 Unable to send analytics data, Post https://www.google-analytics.com/collect: dial tcp: lookup www.google-analytics.com on [::1]:53: read udp [::1]:56971->[::1]:53: read: connection refused
+14:32:54.795 Watching directory: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs
+14:32:54.795 Found 1 files
+14:32:54.821 Initializing concepts cache with 0 concepts
+14:32:54.823 Initializing specs cache with 1 specs
+14:32:54.823 Adding specs from /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+14:32:54.823 Initializing steps cache with 1 steps
+14:32:54.823 Gauge daemon initialized and listening on port: 51054
+15:05:32.354 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between <Source> and <Target>" > 
+15:05:32.386 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <Source> and <Target>" parameters:"Source" parameters:"Target" > > 
+15:05:32.411 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between \"select count(*) from student;\" and \"select count(*) from student;\"" > 
+15:05:32.411 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+18:50:10.156 Watching directory: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs
+18:50:10.194 Found 1 files
+18:50:10.265 Initializing concepts cache with 0 concepts
+18:50:10.284 Initializing specs cache with 1 specs
+18:50:10.284 Adding specs from /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+18:50:10.284 Initializing steps cache with 1 steps
+18:50:10.284 Gauge daemon initialized and listening on port: 49315
+19:22:55.036 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between <Source> and <Target>" > 
+19:22:55.090 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <Source> and <Target>" parameters:"Source" parameters:"Target" > > 
+19:22:55.166 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between \"select count(*) from student;\" and \"select count(*) from student;\"" > 
+19:22:55.166 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:24:58.733 Spec file removed: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+19:24:58.733 Spec file added / modified: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+19:25:00.367 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.368 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:00.369 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.370 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:00.378 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.378 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:00.381 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.381 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:00.386 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.386 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:00.390 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.390 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:00.391 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:00.391 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:01.061 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<> 
+19:25:01.061 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<> > 
+19:25:01.241 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:01.241 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:01.246 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:01.246 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:01.265 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:01.265 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:01.266 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:01.266 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:01.597 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:01.597 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:01.598 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:01.598 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:01.731 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfi" > 
+19:25:01.731 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfi" parameterizedStepValue:"Verfi" > > 
+19:25:02.668 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy" > 
+19:25:02.668 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy" parameterizedStepValue:"Verfiy" > > 
+19:25:03.653 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if" > 
+19:25:03.653 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if" parameterizedStepValue:"Verfiy if" > > 
+19:25:07.115 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:07.115 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:07.115 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:07.115 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:07.405 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if C" > 
+19:25:07.406 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if C" parameterizedStepValue:"Verfiy if C" > > 
+19:25:10.194 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:10.264 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:10.265 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:10.265 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:10.482 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Co" > 
+19:25:10.482 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Co" parameterizedStepValue:"Verfiy if Co" > > 
+19:25:11.775 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:11.775 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:11.775 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:11.775 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:12.075 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Count in" > 
+19:25:12.075 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Count in" parameterizedStepValue:"Verfiy if Count in" > > 
+19:25:12.083 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Count in" > 
+19:25:12.083 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Count in" parameterizedStepValue:"Verfiy if Count in" > > 
+19:25:14.660 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Count in T" > 
+19:25:14.660 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Count in T" parameterizedStepValue:"Verfiy if Count in T" > > 
+19:25:14.708 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Count in T" > 
+19:25:14.708 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Count in T" parameterizedStepValue:"Verfiy if Count in T" > > 
+19:25:19.106 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:19.106 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:19.106 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:19.106 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:19.279 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:19.279 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:19.279 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:19.279 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:19.368 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Colum" > 
+19:25:19.369 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Colum" parameterizedStepValue:"Verfiy if Colum" > > 
+19:25:20.109 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:20.109 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:20.110 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:20.110 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:20.242 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:20.242 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:20.242 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:20.242 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:20.395 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Siz" > 
+19:25:20.396 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Siz" parameterizedStepValue:"Verfiy if Column Siz" > > 
+19:25:21.354 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size" > 
+19:25:21.354 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size" parameterizedStepValue:"Verfiy if Column Size" > > 
+19:25:22.005 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of" > 
+19:25:22.006 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of" parameterizedStepValue:"Verfiy if Column Size of" > > 
+19:25:22.819 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:22.819 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:22.820 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:22.820 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:22.888 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:22.888 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:22.889 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:22.889 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:23.073 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:23.073 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:23.074 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:23.074 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:23.179 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:23.179 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:23.180 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:23.180 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:23.290 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:23.291 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:23.291 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:23.291 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:23.384 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Studen" > 
+19:25:23.385 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Studen" parameterizedStepValue:"Verfiy if Column Size of Studen" > > 
+19:25:24.402 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:24.402 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:24.402 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:24.402 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:24.646 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table" > 
+19:25:24.646 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table" parameterizedStepValue:"Verfiy if Column Size of Student table" > > 
+19:25:25.559 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:25.559 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:25.559 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:25.559 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:25.635 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:25.635 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:25.636 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:25.636 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:25.675 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in so" > 
+19:25:25.675 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in so" parameterizedStepValue:"Verfiy if Column Size of Student table in so" > > 
+19:25:26.313 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:26.314 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:26.314 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:26.314 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:26.361 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:26.361 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:26.363 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:26.363 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:26.617 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source" > 
+19:25:26.618 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source" parameterizedStepValue:"Verfiy if Column Size of Student table in source" > > 
+19:25:27.255 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is" > 
+19:25:27.256 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is" parameterizedStepValue:"Verfiy if Column Size of Student table in source is" > > 
+19:25:28.281 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:28.281 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:28.282 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:28.282 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:28.571 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is ma" > 
+19:25:28.571 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is ma" parameterizedStepValue:"Verfiy if Column Size of Student table in source is ma" > > 
+19:25:29.351 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:29.351 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:29.351 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:29.351 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:29.643 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is mahc" > 
+19:25:29.643 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is mahc" parameterizedStepValue:"Verfiy if Column Size of Student table in source is mahc" > > 
+19:25:31.531 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:31.531 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:31.531 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:31.532 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:31.691 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:31.691 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:31.694 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:31.694 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:31.776 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:31.776 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:31.777 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:31.777 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:31.833 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:31.833 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:31.833 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:31.833 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:32.137 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matchong" > 
+19:25:32.137 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matchong" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matchong" > > 
+19:25:33.265 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is match" > 
+19:25:33.265 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is match" parameterizedStepValue:"Verfiy if Column Size of Student table in source is match" > > 
+19:25:34.510 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:34.510 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:34.510 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:34.510 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:34.782 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with" > 
+19:25:34.783 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with" > > 
+19:25:35.599 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:35.599 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:35.599 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:35.599 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:35.890 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:35.890 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:35.890 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:35.890 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:35.954 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:35.954 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:35.954 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:35.954 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:36.193 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:36.193 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:36.193 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:36.193 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:36.281 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:36.281 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:36.282 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:36.282 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:36.377 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:36.377 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:36.377 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:36.377 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:36.503 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with student tab" > 
+19:25:36.503 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with student tab" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with student tab" > > 
+19:25:37.152 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with student table" > 
+19:25:37.179 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with student table" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with student table" > > 
+19:25:37.179 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with student table" > 
+19:25:37.180 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with student table" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with student table" > > 
+19:25:37.207 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:25:37.207 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:25:37.208 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:25:37.208 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:25:37.457 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with student table in" > 
+19:25:37.457 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with student table in" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with student table in" > > 
+19:26:11.352 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:11.352 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:11.353 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:11.353 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:11.577 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:11.577 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:11.577 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:11.578 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:11.627 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with student table in Ta" > 
+19:26:11.628 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with student table in Ta" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with student table in Ta" > > 
+19:26:12.120 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:12.120 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:12.121 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:12.121 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:12.183 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:12.184 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:12.184 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:12.184 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:12.266 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:12.267 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:12.267 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:12.267 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:12.410 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in source is matching with student table in Target" > 
+19:26:12.411 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in source is matching with student table in Target" parameterizedStepValue:"Verfiy if Column Size of Student table in source is matching with student table in Target" > > 
+19:26:16.281 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:16.281 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:16.282 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:16.282 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:16.403 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student table in Source is matching with student table in Target" > 
+19:26:16.403 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student table in Source is matching with student table in Target" parameterizedStepValue:"Verfiy if Column Size of Student table in Source is matching with student table in Target" > > 
+19:26:20.540 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student> table in Source is matching with student table in Target" > 
+19:26:20.541 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student> table in Source is matching with student table in Target" parameterizedStepValue:"Verfiy if Column Size of Student> table in Source is matching with student table in Target" > > 
+19:26:22.619 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student\"\" table in Source is matching with student table in Target" > 
+19:26:22.619 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student{} table in Source is matching with student table in Target" parameterizedStepValue:"Verfiy if Column Size of Student<> table in Source is matching with student table in Target" parameters:"" > > 
+19:26:24.531 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of Student" > 
+19:26:24.531 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of Student" parameterizedStepValue:"Verfiy if Column Size of Student" > > 
+19:26:26.861 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of \"Student\" table in Source is matching with student table in Target" > 
+19:26:26.862 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of {} table in Source is matching with student table in Target" parameterizedStepValue:"Verfiy if Column Size of <Student> table in Source is matching with student table in Target" parameters:"Student" > > 
+19:26:33.203 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of \"student\" table in Source is matching with student table in Target" > 
+19:26:33.203 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of {} table in Source is matching with student table in Target" parameterizedStepValue:"Verfiy if Column Size of <student> table in Source is matching with student table in Target" parameters:"student" > > 
+19:26:34.241 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of \"student\" table in Source is matching with" > 
+19:26:34.241 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of {} table in Source is matching with" parameterizedStepValue:"Verfiy if Column Size of <student> table in Source is matching with" parameters:"student" > > 
+19:26:36.537 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verfiy if Column Size of \"student\" table in Source is matching with \"student\" table in Target" > 
+19:26:36.537 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verfiy if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verfiy if Column Size of <student> table in Source is matching with <student> table in Target" parameters:"student" parameters:"student" > > 
+19:26:41.082 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verf if Column Size of \"student\" table in Source is matching with \"student\" table in Target" > 
+19:26:41.082 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verf if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verf if Column Size of <student> table in Source is matching with <student> table in Target" parameters:"student" parameters:"student" > > 
+19:26:41.082 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verf if Column Size of \"student\" table in Source is matching with \"student\" table in Target" > 
+19:26:41.083 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verf if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verf if Column Size of <student> table in Source is matching with <student> table in Target" parameters:"student" parameters:"student" > > 
+19:26:41.862 Api Request Received: messageType:GetAllStepsRequest messageId:2 allStepsRequest:<> 
+19:26:41.862 Sending API response: messageType:GetAllStepResponse messageId:2 allStepsResponse:<allSteps:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from student;> and <select count(*) from student;>" parameters:"select count(*) from student;" parameters:"select count(*) from student;" > > 
+19:26:41.862 Api Request Received: messageType:GetAllConceptsRequest messageId:6 allConceptsRequest:<> 
+19:26:41.862 Sending API response: messageType:GetAllConceptsResponse messageId:6 allConceptsResponse:<> 
+19:26:43.493 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if Column Size of \"student\" table in Source is matching with \"student\" table in Target" > 
+19:26:43.493 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verify if Column Size of <student> table in Source is matching with <student> table in Target" parameters:"student" parameters:"student" > > 
+19:28:44.756 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if Column Size of <SourceTable> table in Source is matching with <TargetTable> table in Target" > 
+19:28:44.756 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verify if Column Size of <SourceTable> table in Source is matching with <TargetTable> table in Target" parameters:"SourceTable" parameters:"TargetTable" > > 
+19:28:44.760 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if Column Size of <SourceTable> table in Source is matching with <TargetTable> table in Target" > 
+19:28:44.762 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verify if Column Size of <SourceTable> table in Source is matching with <TargetTable> table in Target" parameters:"SourceTable" parameters:"TargetTable" > > 
+19:34:41.341 Spec file removed: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+19:34:41.366 Spec file added / modified: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+19:46:44.522 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if Column Size of \"table1\" table in Source is matching with \"student\" table in Target" > 
+19:46:44.522 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verify if Column Size of <table1> table in Source is matching with <student> table in Target" parameters:"table1" parameters:"student" > > 
+19:46:44.523 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if Column Size of \"table1\" table in Source is matching with \"student\" table in Target" > 
+19:46:44.523 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verify if Column Size of <table1> table in Source is matching with <student> table in Target" parameters:"table1" parameters:"student" > > 
+19:46:47.974 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify if Column Size of \"table1\" table in Source is matching with \"table1\" table in Target" > 
+19:46:47.974 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify if Column Size of {} table in Source is matching with {} table in Target" parameterizedStepValue:"Verify if Column Size of <table1> table in Source is matching with <table1> table in Target" parameters:"table1" parameters:"table1" > > 
+19:46:50.610 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between \"select count(*) from table1;\" and \"select count(*) from student;\"" > 
+19:46:50.611 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from table1;> and <select count(*) from student;>" parameters:"select count(*) from table1;" parameters:"select count(*) from student;" > > 
+19:46:53.111 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between \"select count(*) from table1;\" and \"select count(*) from table1;\"" > 
+19:46:53.111 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <select count(*) from table1;> and <select count(*) from table1;>" parameters:"select count(*) from table1;" parameters:"select count(*) from table1;" > > 
+19:46:53.611 Spec file removed: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec
+19:46:53.611 Spec file added / modified: /Users/sriramiyengar/Documents/hackathontest/apachebeamtest/specs/database-test.spec

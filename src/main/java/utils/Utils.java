@@ -7,13 +7,18 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Types;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Utils {
 
     static List<String> values = new ArrayList<>();
     static List<String> schemaNames = new ArrayList<>();
+    static List<String> nullValues = new ArrayList<>();
     static List<String> resultSetValues = new ArrayList<>();
+    static HashMap<String, String> resultSetColumnSize = new HashMap();
+    static HashMap<String, String> resultSetColumnSizeSource  = new HashMap();
     static int count;
 
     public static void addValues(String val){
@@ -29,6 +34,14 @@ public class Utils {
     }
 
     public static List<String> getSchemaNames () {
+        return schemaNames;
+    }
+
+    public static void addNullValues(String val){
+        schemaNames.add(val);
+    }
+
+    public static List<String> getNullValues () {
         return schemaNames;
     }
 
@@ -64,8 +77,49 @@ public class Utils {
 
     }
 
+    public static void resultSetToMapColumnSize(ResultSet rs){
+        try {
+            while (rs.next()) {
+                ResultSetMetaData rsmd = rs.getMetaData();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultSetColumnSize.put(rsmd.getColumnName(i), String.valueOf(rsmd.getColumnDisplaySize(i)));
+                }
+
+            }
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    public static void resultSetToMapColumnSizeSource(ResultSet rs){
+        try {
+            while (rs.next()) {
+                ResultSetMetaData rsmd = rs.getMetaData();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    resultSetColumnSizeSource.put(rsmd.getColumnName(i), String.valueOf(rsmd.getColumnDisplaySize(i)));
+                }
+
+            }
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
     public static List<String> getResultSetValues () {
         return resultSetValues;
+    }
+
+    public static HashMap<String, String> getResultSetColumnSize () {
+        return resultSetColumnSize;
+    }
+
+    public static HashMap<String, String> getResultSetColumnSizeSource() {
+        return resultSetColumnSizeSource;
     }
 
 }

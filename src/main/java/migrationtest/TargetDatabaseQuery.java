@@ -20,4 +20,16 @@ public class TargetDatabaseQuery {
         }
 
     }
+
+    public static void getColumnSize(String table){
+        try {
+            Statement stmt= DatabaseConnection.targetConnection().createStatement();
+            resultSet = stmt.executeQuery("select * from"+table);
+            resultSetToMapColumnSize(resultSet);
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }

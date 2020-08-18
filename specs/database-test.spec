@@ -7,4 +7,5 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Verify Table Count macthes in Source and Target Database
 ----------------
-* Verify Count of Column between "select count(*) from student;" and "select count(*) from student;"
+* Verify Count of Column between "select count(*) from table1;" and "select count(*) from table1;"
+* Verify if Column Size of "table1" table in Source is matching with "table1" table in Target
