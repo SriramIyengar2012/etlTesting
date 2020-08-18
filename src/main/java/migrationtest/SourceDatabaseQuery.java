@@ -17,34 +17,34 @@ import org.apache.beam.sdk.coders.DoubleCoder;
 
 
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.List;
 
 import static utils.Utils.*;
 
 
-
 public class SourceDatabaseQuery {
 
+    private static ResultSet resultSet;
+    public static void compareFieldCount(String query) {
 
-public static void compareFieldCount(String query) {
-
-    PipelineOptions options = PipelineOptionsFactory.create();
-    Pipeline pipeline = Pipeline.create(options);
-    pipeline.apply(JdbcIO.<KV<Integer, String>>read()
-            .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
-            .withQuery(query)
-            .withCoder(KvCoder.of(BigEndianIntegerCoder.of(), StringUtf8Coder.of()))
-            .withRowMapper(new JdbcIO.RowMapper<KV<Integer, String>>() {
-                public KV<Integer, String> mapRow(ResultSet resultSet) throws Exception {
-                    setCount(Integer.parseInt(resultSet.getString(1)));
-                    return KV.of(resultSet.getInt(1), resultSet.getString(1));
-                }
-            })
-    );
-    pipeline.run().waitUntilFinish();
+        PipelineOptions options = PipelineOptionsFactory.create();
+        Pipeline pipeline = Pipeline.create(options);
+        pipeline.apply(JdbcIO.<KV<Integer, String>>read()
+                .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
+                .withQuery(query)
+                .withCoder(KvCoder.of(BigEndianIntegerCoder.of(), StringUtf8Coder.of()))
+                .withRowMapper(new JdbcIO.RowMapper<KV<Integer, String>>() {
+                    public KV<Integer, String> mapRow(ResultSet resultSet) throws Exception {
+                        setCount(Integer.parseInt(resultSet.getString(1)));
+                        return KV.of(resultSet.getInt(1), resultSet.getString(1));
+                    }
+                })
+        );
+        pipeline.run().waitUntilFinish();
 
 
-}
+    }
 
     public static void concatenateStringFields(String query) {
 
@@ -55,12 +55,12 @@ public static void compareFieldCount(String query) {
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
                 .withQuery(query)
                 .withCoder(KvCoder.of(StringUtf8Coder.of(), StringUtf8Coder.of()))
-                .withRowMapper((JdbcIO.RowMapper<KV<String, String>>) resultSet -> KV.of("1", resultSet.getString(1)+ " " +resultSet.getString(2)))
+                .withRowMapper((JdbcIO.RowMapper<KV<String, String>>) resultSet -> KV.of("1", resultSet.getString(1) + " " + resultSet.getString(2)))
         )
                 .apply(ParDo.of(
-                        new DoFn<KV<String, String>,String>() {
+                        new DoFn<KV<String, String>, String>() {
                             @ProcessElement
-                            public void processLink(ProcessContext c){
+                            public void processLink(ProcessContext c) {
                                 System.out.println(c.element().getValue().toString());
                             }
                         }
@@ -76,19 +76,19 @@ public static void compareFieldCount(String query) {
         pipeline.apply(JdbcIO.<KV<String, Double>>read()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
                 .withQuery(query)
-                .withCoder(KvCoder.of(StringUtf8Coder.of(),DoubleCoder.of()))
+                .withCoder(KvCoder.of(StringUtf8Coder.of(), DoubleCoder.of()))
                 .withRowMapper((JdbcIO.RowMapper<KV<String, Double>>) resultSet -> KV.of("1", resultSet.getDouble(1)))
         )
 
                 .apply(Values.<Double>create())
                 .apply(Sum.<Double>doublesGlobally())
                 .apply(ParDo.of(new DoFn<Double, Double>() {
-                    @ProcessElement
-                    public void processElement(@Element Double word, OutputReceiver<Double> out) {
-                        System.out.println(word);
-                    }
-                })
-        );
+                            @ProcessElement
+                            public void processElement(@Element Double word, OutputReceiver<Double> out) {
+                                System.out.println(word);
+                            }
+                        })
+                );
         pipeline.run().waitUntilFinish();
     }
 
@@ -100,8 +100,8 @@ public static void compareFieldCount(String query) {
         pipeline.apply(JdbcIO.<KV<String, Double>>read()
                 .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
                 .withQuery(query)
-                .withCoder(KvCoder.of(StringUtf8Coder.of(),DoubleCoder.of()))
-                .withRowMapper((JdbcIO.RowMapper<KV<String, Double>>) resultSet -> KV.of(resultSet.getString(1),resultSet.getDouble(2)))
+                .withCoder(KvCoder.of(StringUtf8Coder.of(), DoubleCoder.of()))
+                .withRowMapper((JdbcIO.RowMapper<KV<String, Double>>) resultSet -> KV.of(resultSet.getString(1), resultSet.getDouble(2)))
 
         )
                 .apply(GroupByKey.<String, Double>create())
@@ -112,10 +112,10 @@ public static void compareFieldCount(String query) {
                         Double sum = 0.00;
                         Long numberOfRecords = 0L;
                         for (Double value : flows) {
-                           sum+=value;
+                            sum += value;
                             numberOfRecords++;
                         }
-                        System.out.println(KV.of(c.element().getKey(),sum));
+                        System.out.println(KV.of(c.element().getKey(), sum));
                     }
                 }));
         pipeline.run().waitUntilFinish();
@@ -129,27 +129,25 @@ public static void compareFieldCount(String query) {
                 .withQuery(query));
         PCollection<Row> output = rows.apply(Select.fieldNames(columns));
         output.apply(ParDo.of(new DoFn<Row, String>() {
-            @ProcessElement
-            public void processElement(ProcessContext c) throws Exception {
-                List<Schema.Field> fld = c.element().getSchema().getFields();
-                for (Schema.Field f : fld) {
-                    if(f.getType().getTypeName().toString().equalsIgnoreCase("Double")) {
-                        System.out.println(c.element().getDouble(f.getName()));
-                        addValues(String.valueOf(c.element().getDouble(f.getName())));
-                    }
-                    if(f.getType().getTypeName().toString().equalsIgnoreCase("String")) {
-                        System.out.println(c.element().getString(f.getName()));
-                        addValues(String.valueOf(c.element().getString(f.getName())));
-                    }
-                    if(f.getType().getTypeName().toString().equalsIgnoreCase("int")) {
-                        System.out.println(c.element().getInt16(f.getName()));
-                        addValues(String.valueOf(c.element().getInt16(f.getName())));
-                    }
-                }
-
-            }
-
-                }
+                                  @ProcessElement
+                                  public void processElement(ProcessContext c) throws Exception {
+                                      List<Schema.Field> fld = c.element().getSchema().getFields();
+                                      for (Schema.Field f : fld) {
+                                          if (f.getType().getTypeName().toString().equalsIgnoreCase("Double")) {
+                                              System.out.println(c.element().getDouble(f.getName()));
+                                              addValues(String.valueOf(c.element().getDouble(f.getName())));
+                                          }
+                                          if (f.getType().getTypeName().toString().equalsIgnoreCase("String")) {
+                                              System.out.println(c.element().getString(f.getName()));
+                                              addValues(String.valueOf(c.element().getString(f.getName())));
+                                          }
+                                          if (f.getType().getTypeName().toString().equalsIgnoreCase("int")) {
+                                              System.out.println(c.element().getInt16(f.getName()));
+                                              addValues(String.valueOf(c.element().getInt16(f.getName())));
+                                          }
+                                      }
+                                  }
+                              }
 
         ));
         pipeline.run().waitUntilFinish();
@@ -165,20 +163,61 @@ public static void compareFieldCount(String query) {
                 .withQuery(query));
         PCollection<Row> output = rows.apply(Select.fieldNames(columns));
         output.apply(ParDo.of(new DoFn<Row, String>() {
-            @ProcessElement
-            public void processElement(ProcessContext c) throws Exception {
-                List<Schema.Field> fld = c.element().getSchema().getFields();
-                for (Schema.Field f : fld) {
-                    addSchemaNames(f.getType().getTypeName().toString());
-                }
+                                  @ProcessElement
+                                  public void processElement(ProcessContext c) throws Exception {
+                                      List<Schema.Field> fld = c.element().getSchema().getFields();
+                                      for (Schema.Field f : fld)
+                                          addSchemaNames(f.getType().getTypeName().toString());
+                                  }
+                              }
 
-            }
-
-        }
         ));
         pipeline.run().waitUntilFinish();
 
     }
 
+    public static void checkNullConstraint(String query, String columns) {
+        PipelineOptions options = PipelineOptionsFactory.create();
+        Pipeline pipeline = Pipeline.create(options);
+        PCollection<Row> rows = pipeline.apply(JdbcIO.readRows()
+                .withDataSourceConfiguration(DatabaseConnection.sourceConnection())
+                .withQuery("Select * from rank"));
+        PCollection<Row> output = rows.apply(Select.fieldNames(columns));
+        output.apply(ParDo.of(new DoFn<Row, String>() {
+                                  @ProcessElement
+                                  public void processElement(ProcessContext c) throws Exception {
+                                      List<Schema.Field> fld = c.element().getSchema().getFields();
+                                      for (Schema.Field f : fld) {
+                                          addNullValues(String.valueOf(f.getType().getNullable()));
+                                      }
+                                  }
+
+                              }
+
+        ));
+        pipeline.run().waitUntilFinish();
 
     }
+
+    public static void getColumnSizeSource(String table){
+        try {
+            Statement stmt= DatabaseConnection.targetConnection().createStatement();
+            resultSet = stmt.executeQuery("select * from"+table);
+            resultSetToMapColumnSize(resultSet);
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+

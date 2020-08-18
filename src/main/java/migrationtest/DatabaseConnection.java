@@ -9,7 +9,7 @@ public class DatabaseConnection {
 
     public static JdbcIO.DataSourceConfiguration sourceConnection(){
         JdbcIO.DataSourceConfiguration config  = JdbcIO.DataSourceConfiguration.create(
-                "org.apache.derby.jdbc.ClientDriver", "jdbc:derby://localhost:1527//Users/sriramiyengar/Documents/derby/db-derby-10.12.1.1-bin/bin/MyDbTest");
+                "driver", "url");
 
         return config;
 

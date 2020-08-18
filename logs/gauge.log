@@ -6576,3 +6576,22 @@ Utilities.DriverFactory.closeBrowser(DriverFactory.java:72)
 20:02:30.323 
 Total time taken: 4.876s
 20:02:30.335 Updates are available. Run `gauge update -c` for more info.
+09:37:47.816 Plugin java is already installed.
+09:37:47.865 Plugin html-report is already installed.
+09:37:48.985 Checking updates...
+09:37:52.475 Runner connection error: Runner with pid 650 quit unexpectedly(exit status 1).
+09:37:52.475 Error while killing runner: os: process already finished
+09:37:52.475 Failed to start gauge API: Runner with pid 650 quit unexpectedly(exit status 1).
+09:38:08.620 Plugin java is already installed.
+09:38:08.722 Plugin html-report is already installed.
+09:38:09.274 Checking updates...
+09:38:23.995 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"v <test>" > 
+09:38:24.041 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"v {}" parameterizedStepValue:"v <test>" parameters:"test" > > 
+09:38:24.064 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Verify Count of Column between <Source> and <Target>" > 
+09:38:24.064 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Verify Count of Column between {} and {}" parameterizedStepValue:"Verify Count of Column between <Source> and <Target>" parameters:"Source" parameters:"Target" > > 
+09:38:29.538 Plugin [Html Report] with pid [662] has exited
+09:38:29.644 Specifications:	1 executed	1 passed	0 failed	0 skipped
+09:38:29.644 Scenarios:	1 executed	1 passed	0 failed	0 skipped
+09:38:29.644 
+Total time taken: 515ms
+09:38:29.646 Updates are available. Run `gauge update -c` for more info.
