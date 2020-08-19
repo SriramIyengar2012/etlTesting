@@ -3,13 +3,15 @@ package utils;
 import migrationtest.SourceDatabaseQuery;
 import migrationtest.TargetDatabaseQuery;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class ComparisonUtils {
 
     public static void verifyTableCount(String sourceQuery, String targetQuery) {
         try {
-            SourceDatabaseQuery.compareFieldCount(sourceQuery);
+            SourceDatabaseQuery.dataProfileTest(sourceQuery);
             TargetDatabaseQuery.countTableValues(targetQuery);
             List<String> rs = Utils.getResultSetValues();
             if(rs.size() > 1) {
@@ -37,6 +39,25 @@ public class ComparisonUtils {
             e.printStackTrace();
         }
 
+    }
+
+    public static void verifyColumnSum(String sourceColumn, String targetColumn, String sourceTable, String targetTable){
+        SourceDatabaseQuery.schemaVerifyMultiColumns("select " + sourceColumn + " " + "from " + sourceTable, sourceColumn);
+        Iterator schemaIterator = Utils.getSchemaNames().entrySet().iterator();
+        while (schemaIterator.hasNext()) {
+            Map.Entry mapElement = (Map.Entry) schemaIterator.next();
+            String value = (String) mapElement.getValue();
+            if (value.equalsIgnoreCase("double")) {
+                SourceDatabaseQuery.sumOfColumnswithDoubles("select SUM(" + mapElement.getKey() + ") from " + sourceTable);
+            }
+            if (value.equalsIgnoreCase("Long")) {
+                SourceDatabaseQuery.sumOfColumnswithLongs("select SUM(" + mapElement.getKey() + ") from " + sourceTable);
+            }
+        }
+    }
+
+    public static void verifyData(String sourceColumn, String targetColumn, String sourceTable, String targetTable) {
+        SourceDatabaseQuery.multiColumnsSum("Select "+ sourceColumn + " " +"from "+ sourceTable,sourceColumn);
     }
 
 }
