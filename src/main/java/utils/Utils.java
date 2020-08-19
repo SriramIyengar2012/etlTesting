@@ -1,7 +1,6 @@
 package utils;
 
-import org.apache.beam.sdk.schemas.Schema;
-import org.apache.beam.sdk.transforms.DoFn;
+
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -9,17 +8,28 @@ import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+;
 
 public class Utils {
 
     static List<String> values = new ArrayList<>();
-    static List<String> schemaNames = new ArrayList<>();
-    static List<String> nullValues = new ArrayList<>();
+    static HashMap<String, String> schemaNames = new HashMap();
+    static HashMap<String, String> nullValues = new HashMap();
     static List<String> resultSetValues = new ArrayList<>();
     static HashMap<String, String> resultSetColumnSize = new HashMap();
+    static HashMap<String, String> multiColumnData = new HashMap();
     static HashMap<String, String> resultSetColumnSizeSource  = new HashMap();
     static int count;
+
+    public static double getSumCol() {
+        return sumCol;
+    }
+
+    public static void setSumCol(double sumCol) {
+        Utils.sumCol = sumCol;
+    }
+
+    static double sumCol;
 
     public static void addValues(String val){
         values.add(val);
@@ -29,20 +39,19 @@ public class Utils {
         return values;
     }
 
-    public static void addSchemaNames(String val){
-        schemaNames.add(val);
-    }
 
-    public static List<String> getSchemaNames () {
+
+    public static HashMap<String,String> getSchemaNames () {
         return schemaNames;
     }
 
-    public static void addNullValues(String val){
-        schemaNames.add(val);
+    public static HashMap<String,String> getMultiColumnData () {
+        return multiColumnData;
     }
 
-    public static List<String> getNullValues () {
-        return schemaNames;
+
+    public static HashMap<String,String>getNullValues () {
+        return nullValues;
     }
 
     public static void setCount(int c){
